@@ -9,13 +9,13 @@ import {FormControl, FormGroup, Validators} from '@angular/forms';
         <div [formGroupName]="form.formControlNames.street">
             <div>
                 <label for="street-name">
-                    Street Name:
+                    Street Name: *
                 </label>
                 <input type="text" formControlName="name">
             </div>
             <div>
                 <label for="street-number">
-                    Street Number:
+                    Street Number: *
                 </label>
                 <input type="text" formControlName="number">
             </div>
@@ -23,13 +23,13 @@ import {FormControl, FormGroup, Validators} from '@angular/forms';
         <div [formGroupName]="form.formControlNames.city">
             <div>
                 <label for="street-name">
-                    City Zip:
+                    City Zip: *
                 </label>
                 <input type="text" formControlName="zip">
             </div>
             <div>
                 <label for="street-number">
-                    City Name:
+                    City Name: *
                 </label>
                 <input type="text" formControlName="name">
             </div>

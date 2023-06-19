@@ -30,7 +30,7 @@ export type Person = {
                 <input type="text" id="firstName" [formControlName]="form.formControlNames.firstName">
             </div>
             <div>
-                <label for="lastName">Last Name:</label>
+                <label for="lastName">Last Name: *</label>
                 <input id="lastName" type="text" [formControlName]="form.formControlNames.lastName">
             </div>
             <div
@@ -38,8 +38,9 @@ export type Person = {
                 <app-address-form [formControlName]="form.formControlNames.address"></app-address-form>
             </div>
         </form>
+        <h4>Form is {{form.formGroup.valid ? 'valid' : 'invalid'}}</h4>
         <div *ngIf="personUpdate | async; let person">
-            <h1>Person is {{ form.formGroup.valid ? 'valid' : 'invalid'}}</h1>
+            <h1>Person</h1>
             <div>
                 <span>First Name:</span>
                 <span>{{person.firstName}}</span>
